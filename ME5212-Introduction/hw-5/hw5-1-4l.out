@@ -1,0 +1,118 @@
+     *** ECHO OF THE INPUT DATA STARTS ***
+
+ Example 3.2.1: Solution of a differential equation (4L)			                      
+  1  0  0                               MODEL, NTYPE, ITEM                       
+  1  4                                  IELEM, NEM                               
+  1  0                                  ICONT, NPRNT                             
+  0.0   0.25   0.25   0.25   0.25       DX(I)                                    
+  1.0   0.0                             AX0,  AX1                                
+  0.0   0.0                             BX0,  BX1                                
+ -1.0   0.0                             CX0, CX1                                 
+  0.0   0.0  -1.0                       FX0, FX1, FX2                            
+  2                                     NSPV                                     
+  1  1  0.0                             ISPV(1,1), ISPV(1,2), VSPV(1)            
+  5  1  0.0                             ISPV(1,1), ISPV(1,2), VSPV(1)            
+  0                                     NSSV                                     
+  0                                     NNBC                                     
+  0                                     NMPC                                     
+     **** ECHO OF THE INPUT DATA ENDS ****
+
+  _______________________________________________________
+
+        OUTPUT from program   FEM1D   by J N REDDY
+  _______________________________________________________
+
+Example 3.2.1: Solution of a differential equation (4L)			                      
+
+    *** ANALYSIS OF MODEL 1, AND TYPE 0 PROBLEM ***
+               (see the code below)
+
+    MODEL=1,NTYPE=0: A problem described by MODEL EQ. 1
+    MODEL=1,NTYPE=1: A circular DISK (PLANE STRESS) 
+    MODEL=1,NTYPE>1: A circular DISK (PLANE STRAIN) 
+    MODEL=2,NTYPE=0: A Timoshenko BEAM (RIE) problem
+    MODEL=2,NTYPE=1: A Timoshenko PLATE (RIE) problem
+    MODEL=2,NTYPE=2: A Timoshenko BEAM (CIE) problem
+    MODEL=2,NTYPE>2: A Timoshenko PLATE (CIE) problem
+    MODEL=3,NTYPE=0: A Euler-Bernoulli BEAM problem
+    MODEL=3,NTYPE>0: A Euler-Bernoulli Circular plate
+    MODEL=4,NTYPE=0: A plane TRUSS problem
+    MODEL=4,NTYPE=1: A Euler-Bernoulli FRAME problem
+    MODEL=4,NTYPE=2: A Timoshenko (CIE) FRAME problem
+
+
+        Element type (0, Hermite,>0, Lagrange)..=   1
+        No. of deg. of freedom per node, NDF....=   1
+        No. of elements in the mesh, NEM........=   4
+        No. of total DOF in the model, NEQ......=   5
+        Half bandwidth of matrix [GLK], NHBW ...=   2
+        No. of specified primary DOF, NSPV......=   2
+        No. of specified secondary DOF, NSSV....=   0
+        No. of specified Newton B. C.: NNBC.....=   0
+        No. of speci. multi-pt. cond.: NMPC.....=   0
+
+   Boundary information on primary variables:
+
+         1    1    0.00000E+00
+         5    1    0.00000E+00
+
+   Global coordinates of the nodes, {GLX}:
+
+    0.00000E+00  0.25000E+00  0.50000E+00  0.75000E+00  0.10000E+01
+
+   Coefficients of the differential equation:
+
+        AX0 =  0.1000E+01     AX1 =  0.0000E+00
+        BX0 =  0.0000E+00     BX1 =  0.0000E+00
+        CX0 = -0.1000E+01     CX1 =  0.0000E+00
+        FX0 =  0.0000E+00     FX1 =  0.0000E+00     FX2 = -0.1000E+01
+
+
+ SOLUTION (values of PVs) at the NODES: 
+
+    0.00000E+00 -0.23233E-01 -0.40519E-01 -0.39191E-01  0.00000E+00
+  _______________________________________________________
+
+   x is the global coord. if ICONT=1 and it is the local coord. if ICONT=0
+         x       P. Variable  S. Variable
+  _______________________________________________________
+
+    0.00000E+00  0.00000E+00 -0.92934E-01
+    0.31250E-01 -0.29042E-02 -0.92934E-01
+    0.62500E-01 -0.58084E-02 -0.92934E-01
+    0.93750E-01 -0.87125E-02 -0.92934E-01
+    0.12500E+00 -0.11617E-01 -0.92934E-01
+    0.15625E+00 -0.14521E-01 -0.92934E-01
+    0.18750E+00 -0.17425E-01 -0.92934E-01
+    0.21875E+00 -0.20329E-01 -0.92934E-01
+    0.25000E+00 -0.23233E-01 -0.92934E-01
+    0.25000E+00 -0.23233E-01 -0.69144E-01
+    0.28125E+00 -0.25394E-01 -0.69144E-01
+    0.31250E+00 -0.27555E-01 -0.69144E-01
+    0.34375E+00 -0.29716E-01 -0.69144E-01
+    0.37500E+00 -0.31876E-01 -0.69144E-01
+    0.40625E+00 -0.34037E-01 -0.69144E-01
+    0.43750E+00 -0.36198E-01 -0.69144E-01
+    0.46875E+00 -0.38359E-01 -0.69144E-01
+    0.50000E+00 -0.40519E-01 -0.69144E-01
+    0.50000E+00 -0.40519E-01  0.53143E-02
+    0.53125E+00 -0.40353E-01  0.53143E-02
+    0.56250E+00 -0.40187E-01  0.53143E-02
+    0.59375E+00 -0.40021E-01  0.53143E-02
+    0.62500E+00 -0.39855E-01  0.53143E-02
+    0.65625E+00 -0.39689E-01  0.53143E-02
+    0.68750E+00 -0.39523E-01  0.53143E-02
+    0.71875E+00 -0.39357E-01  0.53143E-02
+    0.75000E+00 -0.39191E-01  0.53143E-02
+    0.75000E+00 -0.39191E-01  0.15676E+00
+    0.78125E+00 -0.34292E-01  0.15676E+00
+    0.81250E+00 -0.29393E-01  0.15676E+00
+    0.84375E+00 -0.24494E-01  0.15676E+00
+    0.87500E+00 -0.19595E-01  0.15676E+00
+    0.90625E+00 -0.14697E-01  0.15676E+00
+    0.93750E+00 -0.97977E-02  0.15676E+00
+    0.96875E+00 -0.48989E-02  0.15676E+00
+    0.10000E+01  0.00000E+00  0.15676E+00
+  _______________________________________________________
+
+Stop - Program terminated.
