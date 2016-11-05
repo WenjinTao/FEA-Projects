@@ -1,0 +1,36 @@
+Hw-6-1:			      
+ 3  0  0                               MODEL, NTYPE, ITEM 
+ 0  4                                  IELEM, NEM
+ 0  0                                  ICONT, NPRNT
+	5									NNM
+	1	2	4.0							NOD(1,J),GLX(1)
+	0.0   0.0                           AX0,  AX1
+	1.0   0.0                           BX0,  BX1
+	0.0   0.0                           CX0, CX1
+	0.0   0.0  0.0                      FX0, FX1, FX2
+	2	3	4.0							  NOD(2,J),GLX(2)
+	0.0   0.0                             AX0,  AX1
+	1.0   0.0                             BX0,  BX1
+	0.0   0.0                             CX0, CX1
+	0.0   0.0  0.0                      FX0, FX1, FX2
+	3	4	4.0							NOD(3,J),GLX(3)
+	0.0   0.0                           AX0,  AX1
+	1.0   0.0                           BX0,  BX1
+	0.0   0.0                           CX0, CX1
+	1000.0   0.0  0.0                   FX0, FX1, FX2
+	4	5	4.0						   	  NOD(4,J),GLX(4)
+	0.0   0.0                             AX0,  AX1
+	1.0   0.0                             BX0,  BX1
+	0.0   0.0                             CX0, CX1
+	1000.0   0.0  0.0                     FX0, FX1, FX2
+ 2                                     NSPV
+ 1  1  0.0                             ISPV(1,1), ISPV(1,2), VSPV(1)
+ 4  1  0.0                             ISPV(2,1), ISPV(2,2), VSPV(2) 
+ 2                                     NSSV
+ 2  1  2500                            ISSV(1,1), ISSV(1,2), VSSV(1)
+ 2  2  2500                            ISSV(2,1), ISSV(2,2), VSSV(2)
+ 0                                     NNBC
+ 0                                     NMPC
+
+
+
