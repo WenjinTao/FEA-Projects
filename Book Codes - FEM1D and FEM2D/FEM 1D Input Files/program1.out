@@ -1,0 +1,167 @@
+     *** ECHO OF THE INPUT DATA STARTS ***
+
+ Problem 3.9: Stepped Bar Problem                                               
+ 1  0  0                                                                         
+ 1  3                                                                            
+ 0  1                                                                            
+ 4                                                                               
+ 1 2 12                                                                          
+ 376.9912E6 0.0                                                                  
+ 0.0 0.0                                                                         
+ 0.0 0.0                                                                         
+ 0.0 0.0 0.0                                                                     
+ 2 3 8.0                                                                         
+ 49.087385E6 0.0                                                                 
+ 0.0 0.0                                                                         
+ 0.0 0.0                                                                         
+ 0.0 0.0 0.0                                                                     
+ 3 4 10                                                                          
+ 94.24778E6 0.0                                                                  
+ 0.0 0.0                                                                         
+ 0.0 0.0                                                                         
+ 0.0 0.0 0.0                                                                     
+ 1                                                                               
+ 1 1 0.0                                                                         
+ 2                                                                               
+ 3 1 -200E3                                                                      
+ 4 1 500E3                                                                       
+ 0                                                                               
+ 0                                                                               
+     **** ECHO OF THE INPUT DATA ENDS ****
+
+  _______________________________________________________
+
+        OUTPUT from program   FEM1D   by J N REDDY
+  _______________________________________________________
+
+Problem 3.9: Stepped Bar Problem                                               
+
+    *** ANALYSIS OF MODEL 1, AND TYPE 0 PROBLEM ***
+               (see the code below)
+
+    MODEL=1,NTYPE=0: A problem described by MODEL EQ. 1
+    MODEL=1,NTYPE=1: A circular DISK (PLANE STRESS) 
+    MODEL=1,NTYPE>1: A circular DISK (PLANE STRAIN) 
+    MODEL=2,NTYPE=0: A Timoshenko BEAM (RIE) problem
+    MODEL=2,NTYPE=1: A Timoshenko PLATE (RIE) problem
+    MODEL=2,NTYPE=2: A Timoshenko BEAM (CIE) problem
+    MODEL=2,NTYPE>2: A Timoshenko PLATE (CIE) problem
+    MODEL=3,NTYPE=0: A Euler-Bernoulli BEAM problem
+    MODEL=3,NTYPE>0: A Euler-Bernoulli Circular plate
+    MODEL=4,NTYPE=0: A plane TRUSS problem
+    MODEL=4,NTYPE=1: A Euler-Bernoulli FRAME problem
+    MODEL=4,NTYPE=2: A Timoshenko (CIE) FRAME problem
+
+
+        Element type (0, Hermite,>0, Lagrange)..=   1
+        No. of deg. of freedom per node, NDF....=   1
+        No. of elements in the mesh, NEM........=   3
+        No. of total DOF in the model, NEQ......=   4
+        Half bandwidth of matrix [GLK], NHBW ...=   2
+        No. of specified primary DOF, NSPV......=   1
+        No. of specified secondary DOF, NSSV....=   2
+        No. of specified Newton B. C.: NNBC.....=   0
+        No. of speci. multi-pt. cond.: NMPC.....=   0
+
+   Boundary information on primary variables:
+
+         1    1    0.00000E+00
+
+   Boundary information on secondary variables:
+
+         3    1   -0.20000E+06
+         4    1    0.50000E+06
+
+     Properties of Element =  1
+
+        Element length, H ....... =  0.1200E+02
+        AX0 =  0.3770E+09     AX1 =  0.0000E+00
+        BX0 =  0.0000E+00     BX1 =  0.0000E+00
+        CX0 =  0.0000E+00     CX1 =  0.0000E+00
+        FX0 =  0.0000E+00     FX1 =  0.0000E+00     FX2 =  0.0000E+00
+
+
+     Properties of Element =  2
+
+        Element length, H ....... =  0.8000E+01
+        AX0 =  0.4909E+08     AX1 =  0.0000E+00
+        BX0 =  0.0000E+00     BX1 =  0.0000E+00
+        CX0 =  0.0000E+00     CX1 =  0.0000E+00
+        FX0 =  0.0000E+00     FX1 =  0.0000E+00     FX2 =  0.0000E+00
+
+
+     Properties of Element =  3
+
+        Element length, H ....... =  0.1000E+02
+        AX0 =  0.9425E+08     AX1 =  0.0000E+00
+        BX0 =  0.0000E+00     BX1 =  0.0000E+00
+        CX0 =  0.0000E+00     CX1 =  0.0000E+00
+        FX0 =  0.0000E+00     FX1 =  0.0000E+00     FX2 =  0.0000E+00
+
+
+   Element coefficient matrix, [ELK]:
+
+    0.31416E+08 -0.31416E+08
+   -0.31416E+08  0.31416E+08
+
+   Element source vector, {ELF}:
+
+    0.00000E+00  0.00000E+00
+
+   Element coefficient matrix, [ELK]:
+
+    0.61359E+07 -0.61359E+07
+   -0.61359E+07  0.61359E+07
+
+   Element source vector, {ELF}:
+
+    0.00000E+00  0.00000E+00
+
+   Element coefficient matrix, [ELK]:
+
+    0.94248E+07 -0.94248E+07
+   -0.94248E+07  0.94248E+07
+
+   Element source vector, {ELF}:
+
+    0.00000E+00  0.00000E+00
+
+ SOLUTION (values of PVs) at the NODES: 
+
+    0.00000E+00  0.95493E-02  0.58442E-01  0.11149E+00
+  _______________________________________________________
+
+   x is the global coord. if ICONT=1 and it is the local coord. if ICONT=0
+         x       P. Variable  S. Variable
+  _______________________________________________________
+
+    0.00000E+00  0.00000E+00  0.30000E+06
+    0.15000E+01  0.11937E-02  0.30000E+06
+    0.30000E+01  0.23873E-02  0.30000E+06
+    0.45000E+01  0.35810E-02  0.30000E+06
+    0.60000E+01  0.47746E-02  0.30000E+06
+    0.75000E+01  0.59683E-02  0.30000E+06
+    0.90000E+01  0.71620E-02  0.30000E+06
+    0.10500E+02  0.83556E-02  0.30000E+06
+    0.12000E+02  0.95493E-02  0.30000E+06
+    0.00000E+00  0.95493E-02  0.30000E+06
+    0.10000E+01  0.15661E-01  0.30000E+06
+    0.20000E+01  0.21772E-01  0.30000E+06
+    0.30000E+01  0.27884E-01  0.30000E+06
+    0.40000E+01  0.33995E-01  0.30000E+06
+    0.50000E+01  0.40107E-01  0.30000E+06
+    0.60000E+01  0.46219E-01  0.30000E+06
+    0.70000E+01  0.52330E-01  0.30000E+06
+    0.80000E+01  0.58442E-01  0.30000E+06
+    0.00000E+00  0.58442E-01  0.50000E+06
+    0.12500E+01  0.65073E-01  0.50000E+06
+    0.25000E+01  0.71705E-01  0.50000E+06
+    0.37500E+01  0.78336E-01  0.50000E+06
+    0.50000E+01  0.84968E-01  0.50000E+06
+    0.62500E+01  0.91599E-01  0.50000E+06
+    0.75000E+01  0.98230E-01  0.50000E+06
+    0.87500E+01  0.10486E+00  0.50000E+06
+    0.10000E+02  0.11149E+00  0.50000E+06
+  _______________________________________________________
+
+Stop - Program terminated.
